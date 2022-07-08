@@ -9,6 +9,10 @@ body{
     
 }
 
+#bd{
+    width: 1190px;
+}
+
 .group{
     background-color: white;
     border-radius: 3%;
@@ -17,6 +21,14 @@ body{
     padding-left: 30px;
     display: flex;
     flex-direction: row;
+}
+
+.co{
+    width:52%;    
+}
+
+.co2{
+    width: 45%;
 }
 
 #avt{
@@ -73,7 +85,28 @@ body{
     justify-content: space-between;
 }
 
-/* .co{
-    display: flex;
-    flex-direction: column;
-} */
+@media screen and (max-width: 768px) {
+    #avt{
+        display: none;
+    }
+    #bd{
+        width: 100%;
+    }
+    #hv{
+        display: flex;
+        flex-direction: column;
+    }
+    .co{
+        width: 100%;
+    }
+    .co2{
+        width: 100%;
+    }
+    #fix{
+        margin-top: 30px;
+    }
+    .chu{
+        text-align: center;
+        padding-left: 10%;
+    }
+}
