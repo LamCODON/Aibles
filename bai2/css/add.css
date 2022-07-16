@@ -4,6 +4,44 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+.header i{
+    display: none;
+}
+
+li{
+    display: inline-block;
+    height: 100%;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+li>a:hover{
+    background-color: black;
+    color: white;
+    letter-spacing: 4px;
+}
+
+ul{
+    position: fixed;
+    top: 0;
+    height: 5%;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-top: 1%;
+}
+
+
+
 .info{
     display: flex;
     justify-content: center;
@@ -42,61 +80,119 @@
 }
 
 .main{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    text-align: center;
+    margin: 10px 0;
     height: 100vh;
-    background-color: rgb(234, 254, 255);
+    background-color: rgb(227, 255, 244);
+    padding-top: 1px;
 }
 
 .main-introduce{
-    margin-top: 30px;
+    margin: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
 }
 
+.avt{
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px 40px;
+    margin-top: 5%; 
+    
+}
+
 .main-avt{
-    width: 30%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background-color: white;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.main-information{
+    width: 75%;
+}
+.main-hang{
+    display: flex;
+    flex-direction: row;
+}
+.main-cot{
+    padding-top:10px;
+    width: 50%;
+}
+
+.tt>i{
+    padding-right: 10px;
+}
+
+.tt{
+    padding: 20px;
     display: flex;
     align-items: center;
 }
 
-.avt{
-    height: auto;
-    width: 300px;
-    border: 10px solid rgb(72, 196, 34);
-
-}
-.main>p{
-    font-size: 100px;
+.study{
+    height: 350px;
+    background-color: white;
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 10px;
 }
 
-.introduce-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 70%;
+.study > p{
+    display: block;
+    padding: 10px 20px;
 }
-.in{
-    padding: 50px;
-}
-.in span{
-    color: rgb(56, 145, 29);
-}
-.in>*{
-    display: inline-block;
-    font-size: 20px;
-}
-.bonus{
+.main-wrapper{
     display: flex;
     flex-direction: row;
+    height: 50%;
 }
-.colum{
-    width: 50%;
+.theme{
+    width: 33%;
+    background-color: white;
+    margin: 0px 20px;
+    height: 100%;
+    border-radius: 10px;
 }
+.skill{
+    margin-left: 20px;
+}
+.doc1{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+.doc2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.theme>.tt>span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.study-head>.tt>span{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.doc{
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
 .galery{
     text-align: center;
     height: 100vh;
@@ -110,7 +206,7 @@
 .wrapper{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
 }
 
 .wrapper>*{
@@ -120,10 +216,91 @@
 }
 
 .item1{
-    grid-column: 1/4;
+    grid-column: 1/3;
 }
 
 .item2{
-    grid-column: 1/3;
+    grid-row: 1/3;
+    grid-column: 3/4;
     
+}
+.item3{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    
+}
+
+hr{
+    height: 2px;
+    background-color: gray;
+}
+
+.contact{
+    height: 100vh;
+    background-color:aliceblue;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.contact>p{
+    text-align: center;
+    font-size: 90px;
+}
+.text{
+    height: 80%;
+    width: 750px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 25% 37% 8%;
+}
+.text>button{
+    width: 150px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 1%;
+}
+.text>*{
+    margin: 2%;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .avt{
+        display: none;
+    }
+    .main-avt{
+        width: 100%;
+    }
+    .main-information{
+        padding-left: 20px;
+    }
+    .study{
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .main-introduce{
+        flex-direction: column;
+    }
+    .main{
+        height: auto;
+    }
+    .main-wrapper{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .theme{
+        width: 95%;
+        margin: 10px 20px;
+        height: 300px;
+    }
 }
