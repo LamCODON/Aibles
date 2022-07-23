@@ -1,0 +1,135 @@
+* {
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 27px 60px;
+    list-style-type: none;
+}
+
+.header__content li {
+    margin-left: 33px;
+}
+
+
+
+.header__content li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    /* color: #000000; */
+    text-decoration: none;
+}
+
+.blog a{
+    color: #FF6464;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container__tittle p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+    margin-bottom: 23px;
+    margin-top: 106px;
+}
+
+.container__content {}
+
+.container__content--first p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #21243D;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.container__content--mid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.container__content--mid hr {
+    margin: 0 20px;
+}
+.content--mid--left{
+    font-family: 'Heebo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+color: #21243D;
+}
+
+.content--mid--right{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+
+/* Light */
+
+color: #8695A4;
+}
+.container__content--last {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 29px;
+    /* Dark Color */
+
+    color: #21243D;
+}
+
+.container__content>hr {
+    width: 681px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+}
+
+.footer__icon img {
+    height: 30px;
+    width: auto;
+    margin-bottom: 26px;
+}
+
+.icon--add {
+    margin-right: 35px;
+}
+
+.footer__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #21243D;
+}
+
+@media screen and (max-width:375px) {
+    
+}
