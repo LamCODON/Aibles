@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="add.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;600;700;800;900&display=swap"
@@ -16,124 +15,80 @@
 </head>
 
 <body>
+    <header>
+        <a href="">Blog</a>
+        <a href="" class="nav--works">Works</a>
+        <a href="">Contact</a>
+        <i class="material-icons none-pc">list</i>
+    </header>
 
-    <head>
-        <div class="nav">
-            <div class="nav__text">
-                <a href="work/index.html">Works</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>
-                <label class="material-icons none-web" for="nav-mobile__input">list</label>
+    <container>
+        <div class="container__main">
+            <div class="container__header">
+                <p>Work</p>
             </div>
-        </div>
-        <input type="checkbox" hidden id="nav-mobile__input" class="nav__input">
-        <label class="nav__overlay" for="nav-mobile__input"></label>
-        <div class="nav-mobile__text">
-            <label class="material-icons" for="nav-mobile__input">close</label>
-            <a href="">Works</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-        </div>
-
-
-    </head>
-    <div class="prof">
-        <div class="prof__main">
-            <div class="prof__content">
-                <p class="prof__content--big">Hi, I am John, <br>
-                    Creative Technologist</p>
-                <p class="prof__content--small">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                    amet.</p>
-                <button class="prof__btn">Download Resume</button>
-            </div>
-            <img class="prof__img"
-                src="https://s3-alpha-sig.figma.com/img/c316/adc4/65a80990af3a0075303343f0d615c92a?Expires=1659916800&Signature=ENzYfCOfhSMaM10JFbz72ICIuOyjIw7LyUJHKYDI1Q4~HO76fk3hIeHRx4ROV5QfMwyqHp8KOaxgsOs5e0FInnFpGCNl1rgqmT9fiVQEEhTZsiTab~3BHjviP6A9odp~MNLmLFKCsJiMPQZaqSwmPPXV4bJwBiTyx9EHosHhyhkkJxOBRpzgFi2llf5S4~mfSa11TXSldSccfObwTbJj30bPqtX7YV1ooXKRtB0A7-affWoR1JsxwHYGrKj48Sb6ugmpwvGYawn2enKTKJ6rhiPfebBW5l6zC5hyi2yMTVQsRqwLr46SDiYqYGK7DTeSKNzc60LG3I9GT3A8Nfj51w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                alt="">
-        </div>
-    </div>
-    <div class="post">
-        <div class="post-main">
-            <div class="post__head">
-                <p class="post__head--left">Recent posts</p>
-                <a href="" class="post__head--right">View all</a>
-            </div>
-            <div class="post__content-main">
-                <div class="post__content">
-                    <p class="post__content--first">Making a design system from scratch</p>
-                    <div class="post__content--second">
-                        <p class="post__content--second-left">12 Feb 2020</p>
-                        <hr>
-                        <p class="post__content--second-right">Design, Pattern</p>
+            <div class="container__content">
+                <img src="https://s3-alpha-sig.figma.com/img/1c6b/bc0b/e719e9d93c02a87ba51308ebb0297cdf?Expires=1660521600&Signature=glZaOvfsOAF7SvNTD7e2d5KFdh8ImIJsc-GSjUI3ovY1sROy1S1~Wt9vuNj-vhrc1cgz~25XTvjQLFj3RUNikalnI1pdWWA1HNkd8NIVwMJ16YvSnR1uksUiqQHKvAfJjSN3H0b8IN7eFODtb6vnTG9SdEmLDhDRkmitk-f2y0WrlvG2Z-oo4LjCZTO-h1AlNQuJGdfoejYVm~YZ0RR3lpQpXQOqrPOa5-WfIHlYw3aEUzdLItiPpLRa-SM~6GpA15s4cNWMOuKaQa07QjUeLb6rayuwubC7hedmegsr1DMGpvNOFoQeCnBoJ0CjA3EzozTsc5EX7I6Ugyl-WMwW~g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">   
+                <div class="content__text">
+                    <p class="content__text--first">Designing Dashboards</p>
+                    <div class="content__text--mid">
+                        <p class="content__text--left">2020</p>
+                        <p class="content__text--right">Dashboard</p>
                     </div>
-                    <p class="post__content--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.</p>
-                </div>
-                <div class="post__content">
-                    <p class="post__content--first">Creating pixel perfect icons in Figma</p>
-                    <div class="post__content--second">
-                        <p class="post__content--second-left">12 Feb 2020</p>
-                        <hr>
-                        <p class="post__content--second-right">Figma, Icon Design</p>
-                    </div>
-                    <p class="post__content--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.</p>
-                </div>
+                    <p class="content__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>  
             </div>
-        </div>
-    </div>
-    <div class="work">
-        <div class="work-main">
-            <p class="work__head">Featured works</p>
-            <div class="work__content">
-                <img src="https://s3-alpha-sig.figma.com/img/1c6b/bc0b/e719e9d93c02a87ba51308ebb0297cdf?Expires=1659916800&Signature=hERptxgJEtNGh-UCFm5ZvROh-I1Qt-3rODLR~K0DpFHV1bwrHNKnjELY-aIeige0Qj0Pa4pGNW5WxxlBEh09XCpy3~rDFMe-WYvRCkHlhJTmXZYPQ8XRHqEhvixHQhfsCDpxSnxHFxY8BssaTsuIZVO~deqNgLa7JRDV2dYYMHTl-GOakCvmPPESi~AH8sf1e6Zz6kLmENspB7UL5ZAg2uQK7xgbvo78GUpmuriBlk2cn78j2RfofRn6p0kHtj63lQcWczuP1oMt4Beca5hZ31ndnh2i8K7yHVWVtFdVRG~Vml0Csw~sBRH2a76CGmadxMzKjhjtwJ-Zzmq0vp4sQg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                    alt="" class="work__img">
-                <div class="work__text">
-                    <p class="work__text--first">Designing Dashboards</p>
-                    <div class="work__text--mid">
-                        <p class="work__text--left">2020</p>
-                        <p class="work__text--right">Dashboard</p>
+            <hr class="none-mobile">
+            <div class="container__content none-mobile">
+                <img src="https://s3-alpha-sig.figma.com/img/44dc/7799/6f359e2db24fc4e08bfd61cf50427139?Expires=1660521600&Signature=Tbxm4aHBpmAGzL8r9x1SeyXIV8zhpe2-tqoKvSS1gfJMHvF2QgvnIEH0S1RKZf0l-1R~XHfpuBvc6MA6sN9h7P9Ky4pSfzg2-BAfQarZEwiORq6wWHextVSauLp4hNvAKqFPajmBetCX9YCXCSe9CfjY0Lc9zU6HmfbMM5QIMI-4WH~YzwpPXzpJ2scZ~Mz9o6hx08eIVTk9s7OR8IWWuXsllnkmIBcKjHu~paKhKtuX3nl0rGmzcAVpib39c3v0UJIhIvSJWdSteQCJVhYXSmcD8-x2RShXCAKO6GX3pSJbjE1REjz5k643XdwqQIedZPYA0HRarmTBRkjvb4AQpw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">   
+                <div class="content__text">
+                    <p class="content__text--first">Vibrant Portraits of 2020</p>
+                    <div class="content__text--mid">
+                        <p class="content__text--left">2018</p>
+                        <p class="content__text--right">Illustration</p>
                     </div>
-                    <p class="work__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.</p>
-                </div>
+                    <p class="content__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>  
+            </div>
+            <hr class="none-mobile">
+            <div class="container__content none-mobile">
+                <img src="https://s3-alpha-sig.figma.com/img/a511/7cdc/a561b38768fbe6667854fc00641b25fb?Expires=1660521600&Signature=M0AjQBa7bkLEWoApf6s248mNFieI4gFLmQajgvro02PSzENF~xw4O-cKyUWnZf84MxoAZ9pD~W0UR9ONCgOpjDiHSREXNrM~lfweT~7XxQYmrapnNINDL9Gp0furbXkzVV8kqjMg3qhrcRT-AoytRbPGgnM4rLXw8PCEKnrPpe3haTkDA74I~GLZtwtjjhQcrwUhIPt7jQtjwO4yB2DgfwiMJnr01WTQ~YCtQhma~GiMfb-p-rj1xD4LFIzKrDmZBxN~xnXCBM1HnET3MI0w49eayw7tQDfnESWte142~OWNxiYOYv~UpXue201mGLReixvXTQJ9d0lcSd891Gyotw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">   
+                <div class="content__text">
+                    <p class="content__text--first">36 Days of Malayalam type</p>
+                    <div class="content__text--mid">
+                        <p class="content__text--left">2018</p>
+                        <p class="content__text--right">Typography</p>
+                    </div>
+                    <p class="content__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>  
+            </div>
+            <hr class="none-mobile">
+            <div class="container__content none-mobile">
+                <img src="https://s3-alpha-sig.figma.com/img/c493/dd85/ae266af13b0a7129c8191f3efbfe12b5?Expires=1660521600&Signature=K1R5CCSULquT6w-XtEPINgAQCb3FPDATElm-yL5aLK5P-iABAlaVYyB2zRQoo4sLTB8vGyB8PL69I9usE23gzk86cdHFhq2iL0ZYP05lcwzq-93HocAB4ay--TduMPFGmbC6zqheoFJE8TOfENdB67~hR4TiNsmpNKt46KXJH9pkN86MosU6kGyZHk8cQ~59hw6NsnZqG5rRXxCPYosZ2S~sghQSPQHauLuh4zp3TZGP1a7NUVnE03HGhHouf0DUWfhyQxIv3xbj1k6zaAGSXQAonbWWsovpy2gIJNjIeb6YIka3lHFiUbS6FVQ3x8MxUILFRngOx8F14~PxUZzU5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">   
+                <div class="content__text">
+                    <p class="content__text--first">Components</p>
+                    <div class="content__text--mid">
+                        <p class="content__text--left">2018</p>
+                        <p class="content__text--right">Components, Design</p>
+                    </div>
+                    <p class="content__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>  
             </div>
             <hr>
-            <div class="work__content none">
-                <img src="https://s3-alpha-sig.figma.com/img/44dc/7799/6f359e2db24fc4e08bfd61cf50427139?Expires=1659916800&Signature=SUBvSvYIGuFyoZIjQ8nt-kAZnJiCPgquiqiuAD8RdKF9VH7npspEuqgqbJsjWHGg37lTvYPRIANXED1ATJbbrkYgB-jP0U3SWgTJLYQ66QGrT42K5QbUNteWtjBFUG9VMXVORyFMKBRJkKdAHrVfsu3jcVjh8u8wlj~hhfmsfFEB87D3aCn-XlcB6oiSn5UaPeHMTIXa4EZqJMZd4hKqvp~rzMLI40duhgqKzDYt4vpdgT-Qubhq1MMuwHdEn3SOniqcX8CRKm2Y-GOBEP4kWTE~0aV4LeuhSMk~H~o3OMp4sKqvLQ6pO0nFNCh4lwi94~9Zx9jB3l3npiXEGYp2UQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                    alt="" class="work__img">
-                <div class="work__text">
-                    <p class="work__text--first">Vibrant Portraits of 2020</p>
-                    <div class="work__text--mid">
-                        <p class="work__text--left">2018</p>
-                        <p class="work__text--right">Illustration</p>
+            <div class="container__content none-pc-flex">
+                <img src="https://s3-alpha-sig.figma.com/img/32e8/5901/041642efedbe4da956dd72b6cf0f4834?Expires=1660521600&Signature=Yiw21wguo4SAzt4TWldqWA3OusaeJCaH83vzfbYV0PRv2mlho4ayqrvDW1zhGZAutlvU1Ug4Jz0P~5IbbrME4-XU7k-VIZrQmhN0M1sNCzXa9R8RMn1hkaR8Z5MlqZCkAKQ~-1Z3EPBLiKav7091z0UlqJaIfsOzt51QYOQX3a5d3Z3D4j1pmGFRB1XJasjmwoQ12ACrGXWvsjwOL-zLT0xhr5M7~zLfIyjXtoQz-ZNZEG4kMpUDl66NG44N9HMkqij802jOyrVekdbbtA3rSWDmaX51UlRRv4Hqz4Yu9BFBPAvRVcPWXcBzyxp0XTkS2fuCfP-FGNJWU2AyAUFIsg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">   
+                <div class="content__text">
+                    <p class="content__text--first">Designing Landing pages</p>
+                    <div class="content__text--mid">
+                        <p class="content__text--left">2018</p>
+                        <p class="content__text--right">Website</p>
                     </div>
-                    <p class="work__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.</p>
-                </div>
+                    <p class="content__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>  
             </div>
-            <hr>
-            <div class="work__content none">
-                <img src="https://s3-alpha-sig.figma.com/img/a511/7cdc/a561b38768fbe6667854fc00641b25fb?Expires=1659916800&Signature=T~i-Q9ieAUTmlyfUrKFPQApERYc-955wcph-vi9C25QNK0mwhdd2fqgD3DbkRIBshLwkBVVR7f33J6wDs5sUMjdt0tJK-eI4nZ549K6fuLdUQqz4TMu24ZtKavj-9MLRFsMZ08XrF-Z2VRxbHK9GcWRbYyPM-JOOmSo0vPnaEQsLiHIRhp-0OiixhHUMQ~nLySvGjPbIQswJICVsCcYEV4PB2xocnvyEyfoUikJOeBEwafW1yN6u7FkN5WiHkUimbv4Rh-yUXLf9tjUQjZIFr1XHBDvkNma-WmLr7mqw3EYULprpHq9fduCrTSEMLF1LypjwzZ7NwW9ByETlDR7B5w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                    alt="" class="work__img">
-                <div class="work__text">
-                    <p class="work__text--first">36 Days of Malayalam type</p>
-                    <div class="work__text--mid">
-                        <p class="work__text--left">2018</p>
-                        <p class="work__text--right">Typography</p>
-                    </div>
-                    <p class="work__text--last">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.</p>
-                </div>
-            </div>
-            <hr>
+            <hr class="none-pc-flex">
         </div>
-    </div>
+    </container>
     <footer>
         <div class="footer-main">
             <div class="footer__icon">

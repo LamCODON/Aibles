@@ -1,0 +1,167 @@
+* {
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #21243D;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 27px 60px 90px 0;
+}
+
+header a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav--works{
+    color: #FF6464;
+}
+
+container {
+    display: flex;
+    justify-content: center;
+}
+
+.container__main {
+    width: 60%;
+}
+
+.container__header p {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.container__content,
+.content__text--mid {
+    display: flex;
+}
+
+.container__content img {
+    width: 246px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 2%;
+}
+
+.content__text {
+    flex-grow: 1;
+}
+
+.content__text--first {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+}
+
+.content__text--mid {
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+.content__text--left {
+    font-weight: 900;
+    font-size: 18px;
+    margin-right: 36px;
+    display: block;
+    height: 25px;
+    width: 62px;
+    background: #142850;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+}
+
+.content__text--right {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+
+.content__text--last {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.container__main hr{
+    border: 1px solid #E0E0E0;
+    margin: 47px 0;
+}
+body .none-pc {
+    display: none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+
+.footer__icon img {
+    height: 30px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #21243D;
+    margin-top: 26px;
+    margin-bottom: 54px;
+}
+.none-pc-flex{
+    display: none;
+}
+
+/* screen-mobile */
+@media screen and (max-width:375px) {
+    header {
+        margin: 12px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    body .none-pc {
+        display: block;
+    }
+    .none-pc-flex{
+        display: flex;
+    }
+    .none-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container__content{
+        flex-direction: column;
+    }
+    .container__content img{
+        height: 100%;
+        width: auto;
+        margin-bottom: 17px;
+    } 
+}
+
+
+
+@media screen and (max-width:900px){
+    .container__main {
+        width: 95%;
+    }
+}
