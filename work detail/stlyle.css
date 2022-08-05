@@ -1,0 +1,162 @@
+* {
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #21243D;
+}
+
+body .none-pc {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 27px 60px 90px 0;
+}
+
+header a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.nav--works {
+    color: #FF6464;
+}
+
+container {
+    display: flex;
+    justify-content: center;
+}
+
+.container__main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__head {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.container__text {
+    display: flex;
+    /* align-items: center; */
+    padding-top: 30px;
+    padding-bottom: 23px;
+}
+
+.container__text--left {
+    text-align: center;
+    height: 25px;
+    width: 62px;
+    min-width: 62px;
+    background: #FF7C7C;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 27px;
+}
+
+.container__text--right {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.container__text--last {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 23px;
+}
+.text--heading1{
+    font-weight: 500;
+font-size: 30px;
+line-height: 60px;
+color: #21243D;
+padding-top: 54px;
+}
+.text--heading2{
+    font-weight: 500;
+font-size: 24px;
+line-height: 60px;
+color: #21243D;
+}
+.img__second{
+    padding-top: 30px;
+    padding-bottom: 27px;
+}
+.img__last{
+    padding-bottom: 27px;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+
+.footer__icon img {
+    height: 30px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #21243D;
+    margin-top: 26px;
+    margin-bottom: 54px;
+}
+
+.none-pc-flex {
+    display: none;
+}
+
+/* screen-mobile */
+@media screen and (max-width:375px) {
+    header {
+        margin: 12px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    body .none-pc {
+        display: block;
+    }
+
+    .none-pc-flex {
+        display: flex;
+    }
+
+    .none-mobile {
+        display: none;
+    }
+    .container__head{
+        padding-top: 32px;
+    }
+    .container__main{
+        width: 92%;
+    }
+}
