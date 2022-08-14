@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Newyork;
+  src: url(./FontsFree-Net-NewYorkSmallRegular.ttf);
+}
+@font-face {
+  font-family: Newyorklarge;
+  src: url(./FontsFree-Net-NewYorkExtraLargeMedium.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Newyork;
+}
+
+header {
+  height: 133px;
+  align-items: center;
+}
+header .header--left p {
+  font-size: 40px;
+}
+header ul li a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  width: 850px;
+  text-align: center;
+}
+.main .main__content--big {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 100%;
+  font-family: Newyorklarge;
+}
+.main .main__content--small {
+  width: 470px;
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main__content-body {
+  width: 640px;
+}
+.main__content-body .main__content-body--head {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+}
+.main__content-body--left {
+  width: 304px;
+  padding-bottom: 60px;
+}
+.main__content-body--left img {
+  width: 304px;
+  height: 176px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__content-body--left p {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.footer__head {
+  width: 100%;
+}
+.footer__head .footer__head--strong, .footer__head .footer__head--thin {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.footer__head .footer__head--thin {
+  font-weight: 400;
+}
+
+.footer__content--big {
+  font-size: 40px;
+}
+.footer__content--small {
+  text-align: center;
+  max-width: 490px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.footer__contact {
+  text-align: center;
+  width: 170px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 900px) {
+  .header--right {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main {
+    width: 100%;
+  }
+  .main .main__content--small, .main .main__content--big {
+    width: 100%;
+  }
+  .main__content-body {
+    width: 100%;
+  }
+  .main__content-body--row {
+    flex-direction: column;
+  }
+  .main__content-body--row img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
