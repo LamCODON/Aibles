@@ -1,0 +1,41 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100wh;
+}
+ul li {
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+ul li button {
+  border: 0px;
+  width: 60px;
+}
+
+header {
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+header .todo-input {
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+header .todo-add {
+  padding: 0 20px;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
