@@ -4,7 +4,7 @@ let todoItems= document.querySelector('.todo-items')
 let btnDelete= document.querySelectorAll('.btn-delete')
 addBtn.onclick= function(){
     if(!input.value){
-        alert("dcmm deo nhap thi add cai loz")
+        alert("ban nen nhap gi do vao")
     }
     else addTodoItem(input.value);
 }
