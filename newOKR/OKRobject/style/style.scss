@@ -28,34 +28,8 @@ header{
             }
         }
     }
-    .header__btn{
-        border: 0;
-        border-radius: 50px;
-    }
 }
-.sort{
-    .sort--left{
-        .sort__btn--left{
-            border-radius: 50px;
-            width: 200px;
-        }
-        button{
-            box-shadow: $box-shadow;
-        }
-    }
-    .sort--right{
-        box-shadow: $box-shadow;
-        border-radius: 50px;
-        button{
-            border: 0;
-            background-color: #ffff;
-        }
-        .sort__btn--right{
-            font-size: 15px;
-            color: $color-primary;
-        }
-    }
-}
+
 .content {
     .hide{
         cursor: pointer;

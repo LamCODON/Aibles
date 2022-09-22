@@ -55,67 +55,52 @@
             <main class="px-5 col-10">
                 <!-- ============HEADER============ -->
                 <header class="row align-items-center">
-                    <h2 class="header__title col-5">Objectives Explorer</h2>
-                    <div class="header__right col-7 row align-items-center">
-                        <div class="col-5 ">
-                            <button class="header__btn d-flex flex-row align-items-center p-2 bg-primary">
+                    <h2 class="header__title col-sm-5">Objectives Explorer</h2>
+                    <div class="header__right col-sm-7 row align-items-center">
+                        <div class="col-sm-6 ">
+                            <button class="header__btn d-flex flex-row align-items-center py-2 px-3 bg-primary border-0 rounded-pill">
                                 <i class="material-icons text-white">add</i>
-                                <p class="text-white">Create new objective</p>
+                                <p class="text-white d-none d-xl-block">Create new objective</p>
                             </button>
                         </div>
-                        <div class="col-1 "></div>
+
                         <i class="material-icons col-2">notifications</i>
-                        <div class="header__info d-flex align-items-center col-4 float-end">
+                        <div class="header__info d-flex align-items-center col-4 align-content-end justify-content-lg-end">
                             <img src="./img/avt.jpg" class="col-1" alt="">
-                            <strong class="name py-5 col-10 d-flex justify-content-center">Cao Vu Tung Lam</strong>
+                            <strong class="name py-5 col-10 justify-content-center d-sm-none d-xxl-flex">Cao Vu Tung Lam</strong>
                             <i class="material-icons col-1">expand_more</i>
                         </div>
                     </div>
                 </header>
 
-                <!-- ============SORT_NAME============ -->
-                <div class="sort-name d-flex justify-content-between">
-                    <strong class="filter">Filter by:</strong>
-                    <strong class="goal">Goal cycle:</strong>
-                </div>
-                <!-- ============SORT============ -->
-                <div class="sort d-flex flex-row justify-content-between align-items-center mt-3 mb-4">
-                    <div class="sort--left d-flex flex-row">
-                        <button class="sort__btn--left bg-white border-0 p-2 d-flex flex-row justify-content-between">
-                            <p class="sort__btn--text">Deparment</p>
-                            <i class="material-icons">arrow_drop_down</i>
-                        </button>
-                        <button
-                            class="sort__btn--left bg-white border-0 p-2 d-flex flex-row justify-content-between mx-2">
-                            <p class="sort__btn--text">Product</p>
-                            <i class="material-icons">arrow_drop_down</i>
-                        </button>
-                    </div>
-                    <div class="sort--right p-2 bg-white d-flex align-items-center">
-                        <button class="sort__btn--right material-icons p-0">arrow_back_ios</button>
-                        <button class="sort__text--right mx-1">Q3-2019</button>
-                        <button class="sort__btn--right material-icons p-0">arrow_forward_ios</button>
-                    </div>
-
-                </div>
                 <!-- ============CONTENT============ -->
                 <div class="content w-100">
                     <div class="content--head d-flex flex-row align-items-center pt-3 pb-2">
                         <button class="hide border-0 me-2 material-icons bg-primary rounded-circle text-white"
                             onclick="hide(this)">remove</button>
-                        <div class="content__block--head row d-flex align-items-center">
-                            <div class="content__block-left--head col-5">
+                        <div class="content__block--head row d-flex align-items-center ">
+                            <div class="content__block-left--head col-sm-5 col-lg-5 d-flex flex-row">
                                 <img src="./img/avt.jpg" alt="" class="content--avt">
-                                <strong class="content__text">Successfully lanch version 2 of our CMR product</strong>      
+                                <div class="d-flex ps-3">
+                                    <strong class="content__text text-start d-flex align-items-center">Successfully lanch version 2 of our CMR product</strong>      
+                                </div>
                             </div>
-                            <strong class="content__unit col-1 text-left">Behance</strong>
-                            <div class="content__action col-6 row">
-                                <p class="content__head--start col-4 justify-content-center">Start:Sep 1</p>
-                                <p class="content__head--due col-4 justify-content-center">Due:Sep 30</p>
-                                <p class="content__element--do content__head--process col-2 justify-content-end pe-3">
+                            <strong class="content__unit d-sm-none d-lg-flex col-lg-1 text-left">Behance</strong>
+                            <div class="content__action col-sm-7 col-lg-6 row">
+                                <div class="col-sm-9 col-md-8 d-flex justify-content-lg-between justify-content-sm-center">
+                                    <div class="start content__head--start d-flex flex-row justify-content-center ms-lg-4 ps-md-5">
+                                        <p class="d-sm-none d-lg-block">Start:</p>
+                                        <p class="">Sep 1</p>
+                                    </div>
+                                    <p class="d-lg-none d-sm-block mx-sm-2 text-success">to</p>
+                                    <div class="start content__head--start d-flex flex-row justify-content-center me-lg-4">
+                                        <p class="d-sm-none d-lg-block ">Due:</p>
+                                        <p class="">Sep 30</p>
+                                    </div>
+                                </div>
+                                <p class="content__element--do content__head--process col-sm-3 col-md-2 d-flex justify-content-end pe-0 pe-md-3">
                                     34%</p>
-                                <div class="content__head--symbol d-flex align-items-center col-2 justify-content-end">
-                                    <div class="content__head--symbol-text d-none d-xxl-block">At risk</div>
+                                <div class="content__head--symbol d-md-flex align-items-center col-md-2 d-sm-none justify-content-end">
                                     <div class="content__head--symbol-coulor ms-2"></div>
                                 </div>
                             </div>
@@ -125,45 +110,55 @@
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get over 10000 new signups </strong>
-                                <p class="content__element--much text-end col-1 pe-5">7841</p>
-                                <p class="content__element--do col-1 text-end pe-5">78%</p>
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get over 10000 new signups </strong>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">18%</p>
                             </div>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get published review in over 12
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get published review in over 12
                                     publications </strong>
-                                <p class="content__element--much text-end col-1 pe-5">3</p>
-                                <p class="content__element--do col-1 text-end pe-5">25%</p>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">78%</p>
                             </div>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get over 10000 new signups </strong>
-                                <p class="content__element--much text-end col-1 pe-5">0%</p>
-                                <p class="content__element--do col-1 text-end pe-5">0%</p>
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get over 10000 new signups </strong>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">78%</p>
                             </div>
                         </li>
                     </ul>
                     <div class="content--head d-flex flex-row align-items-center pt-3 pb-2">
                         <button class="hide border-0 me-2 material-icons bg-primary rounded-circle text-white"
                             onclick="hide(this)">remove</button>
-                        <div class="content__block--head row d-flex align-items-center">
-                            <div class="content__block-left--head col-5">
+                        <div class="content__block--head row d-flex align-items-center ">
+                            <div class="content__block-left--head col-sm-5 col-lg-5 d-flex flex-row">
                                 <img src="./img/avt.jpg" alt="" class="content--avt">
-                                <strong class="content__text">Successfully lanch version 2 of our CMR product</strong>      
+                                <div class="d-flex ps-3">
+                                    <strong class="content__text text-start d-flex align-items-center">Successfully lanch version 2 of our CMR product</strong>      
+                                </div>
                             </div>
-                            <strong class="content__unit col-1 text-left">Behance</strong>
-                            <div class="content__action col-6 row">
-                                <p class="content__head--start col-4 justify-content-center">Start:Sep 1</p>
-                                <p class="content__head--due col-4 justify-content-center">Due:Sep 30</p>
-                                <p class="content__element--do content__head--process col-2 justify-content-end pe-3">
-                                    74%</p>
-                                <div class="content__head--symbol d-flex align-items-center col-2 justify-content-end">
-                                    <div class="content__head--symbol-text d-none d-xxl-block">At risk</div>
+                            <strong class="content__unit d-sm-none d-lg-flex col-lg-1 text-left">Behance</strong>
+                            <div class="content__action col-sm-7 col-lg-6 row">
+                                <div class="col-sm-9 col-md-8 d-flex justify-content-lg-between justify-content-sm-center">
+                                    <div class="start content__head--start d-flex flex-row justify-content-center ms-lg-4 ps-md-5">
+                                        <p class="d-sm-none d-lg-block">Start:</p>
+                                        <p class="">Sep 1</p>
+                                    </div>
+                                    <p class="d-lg-none d-sm-block mx-sm-2 text-success">to</p>
+                                    <div class="start content__head--start d-flex flex-row justify-content-center me-lg-4">
+                                        <p class="d-sm-none d-lg-block ">Due:</p>
+                                        <p class="">Sep 30</p>
+                                    </div>
+                                </div>
+                                <p class="content__element--do content__head--process col-sm-3 col-md-2 d-flex justify-content-end pe-0 pe-md-3">
+                                    34%</p>
+                                <div class="content__head--symbol d-md-flex align-items-center col-md-2 d-sm-none justify-content-end">
                                     <div class="content__head--symbol-coulor ms-2"></div>
                                 </div>
                             </div>
@@ -173,25 +168,26 @@
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get over 10000 new signups </strong>
-                                <p class="content__element--much text-center col-1 pe-5">7841</p>
-                                <p class="content__element--do col-1 text-end pe-5">78%</p>
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get over 10000 new signups </strong>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">18%</p>
                             </div>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get over 10000 new signups </strong>
-                                <p class="content__element--much text-center col-1 pe-5">7841</p>
-                                <p class="content__element--do col-1 text-end pe-5">78%</p>
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get published review in over 12
+                                    publications </strong>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">78%</p>
                             </div>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
-                                <strong class="content__element--text col-10">Get over 10000 new signups </strong>
-                                <p class="content__element--much text-center col-1 pe-5">7841</p>
-                                <p class="content__element--do col-1 text-end pe-5">68%</p>
+                                <strong class="content__element--text col-sm-8 col-lg-10  ">Get over 10000 new signups </strong>
+                                <p class="content__element--much text-end col-sm-2  col-lg-1 pe-lg-5">7841</p>
+                                <p class="content__element--do col-sm-2 col-lg-1 text-end pe-lg-5">78%</p>
                             </div>
                         </li>
                     </ul>
