@@ -14,38 +14,24 @@ p {
   margin: 0;
 }
 
-aside {
-  height: 100vh;
+aside .nav a {
+  transition: 0.3s linear;
+}
+aside .nav a:hover {
+  margin-left: 0.5rem;
+}
+aside .nav a:hover > * {
+  color: #1250da;
+}
+aside .nav a.active > * {
+  color: #1250da;
+  font-weight: 700;
 }
 
 header .header__right .header__info img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
-header .header__btn {
-  border: 0;
-  border-radius: 50px;
-}
-
-.sort .sort--left .sort__btn--left {
-  border-radius: 50px;
-  width: 200px;
-}
-.sort .sort--left button {
-  box-shadow: 0 0.1rem 1rem #e1e2e5;
-}
-.sort .sort--right {
-  box-shadow: 0 0.1rem 1rem #e1e2e5;
-  border-radius: 50px;
-}
-.sort .sort--right button {
-  border: 0;
-  background-color: white;
-}
-.sort .sort--right .sort__btn--right {
-  font-size: 15px;
-  color: #1250da;
 }
 
 .content .hide {

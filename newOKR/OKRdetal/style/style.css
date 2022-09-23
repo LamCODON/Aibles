@@ -14,8 +14,18 @@ p {
   margin: 0;
 }
 
-aside {
-  height: 100vh;
+aside .nav a {
+  transition: 0.3s linear;
+}
+aside .nav a:hover {
+  margin-left: 0.5rem;
+}
+aside .nav a:hover > * {
+  color: #1250da;
+}
+aside .nav a.active > * {
+  color: #1250da;
+  font-weight: 700;
 }
 
 header .header__right .header__info img {

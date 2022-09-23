@@ -17,57 +17,51 @@
     <div class="container-fluid px-0">
         <div class="flex-row d-flex">
             <!-- ============ ASIDE =========== -->
-            <aside class="col-2 bg-white col-sm-auto ps-2 ps-md-3 pe-4 position-sticky top-0 start-0">
-                <div class="top display-4 text-center my-5 d-none d-md-block">Aibles</div>
+            <aside class="col-1 col-lg-auto ps-2 ps-lg-3 pe-lg-4 position-sticky top-0 start-0 h-100">
+                <!-- <div class="top display-4 d-none d-lg-block m-4">Aibles</div> -->
                 <div class="nav flex-column ps-md-3">
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
                         <span class="material-icons">dashboard</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">Dashboard</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">Dashboard</span>
                     </a>
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
                         <span class="material-icons">add_circle</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">Create OKR</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">Create OKR</span>
                     </a>
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none active">
                         <span class="material-icons">emoji_objects</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">All objectives</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">All objectives</span>
                     </a>
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
                         <span class="material-icons">manage_accounts</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">Account</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">Account</span>
                     </a>
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
                         <span class="material-icons">settings</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">Settings</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">Settings</span>
                     </a>
-                    <a href="#"
-                        class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
+                    <a href="#" class="placeholder-glow my-4 d-flex align-items-center fw-semibold text-decoration-none">
                         <span class="material-icons">logout</span>
-                        <span class="fs-5 ms-3 d-none d-md-block">Logout</span>
+                        <span class="fs-5 ms-3 d-none d-lg-block">Logout</span>
                     </a>
                 </div>
             </aside>
             <main class="px-5 col-10">
                 <!-- ============HEADER============ -->
-                <header class="row align-items-center">
+                <header class="row align-items-center py-5">
                     <h2 class="header__title col-5">Objectives Explorer</h2>
                     <div class="header__right col-7 row align-items-center">
-                        <div class="col-5 ">
-                            <button class="header__btn d-flex flex-row align-items-center p-2 bg-primary">
+                        <div class="col-6 ">
+                            <button class="header__btn d-flex flex-row align-items-center py-2 px-3 bg-primary border-0 rounded-pill">
                                 <i class="material-icons text-white">add</i>
-                                <p class="text-white">Create new objective</p>
+                                <p class="text-white d-none d-xl-block">Create new objective</p>
                             </button>
                         </div>
-                        <div class="col-1 "></div>
+
                         <i class="material-icons col-2">notifications</i>
-                        <div class="header__info d-flex align-items-center col-4 float-end">
+                        <div class="header__info d-flex align-items-center col-4 align-content-end justify-content-lg-end">
                             <img src="./img/avt.jpg" class="col-1" alt="">
-                            <strong class="name py-5 col-10 d-flex justify-content-center">Cao Vu Tung Lam</strong>
+                            <strong class="name  col-10 justify-content-center d-none d-xxl-flex">Cao Vu Tung Lam</strong>
                             <i class="material-icons col-1">expand_more</i>
                         </div>
                     </div>
@@ -106,13 +100,13 @@
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
                                 <strong class="content__element--text col-7">Get over 10000 new signups </strong>
-                                <p class="content__element--time col-2 pe-5 ">Sep 30</p>
+                                <p class="content__element--time col-2 pe-5 ">Due: Sep 30</p>
                                 <p class="content__element--much col-1 pe-5 ">317</p>
                                 <p class="content__element--target col-1 pe-5 ">1000</p>
                                 <p class="content__element--do col-1 pe-5">31.7%</p>
                             </div>
-                            <button class="material-icons border-0">
-                                expand_more
+                            <button class="material-icons border-0" onclick="kick(this)">
+                                delete
                                 </button>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4 content__result">
@@ -120,26 +114,26 @@
                             <div class="content__element row w-100 m-0">
                                 <strong class="content__element--text col-7">Get published review in over 12
                                     publications </strong>
-                                <p class="content__element--time col-2 pe-5">Sep 30</p>
+                                <p class="content__element--time col-2 pe-5">Due: Sep 30</p>
                                 <p class="content__element--much col-1 pe-5">8</p>
                                 <p class="content__element--target col-1 pe-5">50</p>
                                 <p class="content__element--do col-1 pe-5">16%</p>
                             </div>
-                            <button class="material-icons border-0">
-                                expand_more
+                            <button class="material-icons border-0" onclick="kick(this)">
+                                delete
                                 </button>
                         </li>
                         <li class=" ms-3 d-flex flex-row align-items-center w-100 my-4 content__result">
                             <img src="./img/avt.jpg" alt="">
                             <div class="content__element row w-100 m-0">
                                 <strong class="content__element--text col-7">Get over 10000 new signups </strong>
-                                <p class="content__element--time col-2 pe-5">Sep 30</p>
+                                <p class="content__element--time col-2 pe-5">Due: Sep 30</p>
                                 <p class="content__element--much col-1 pe-5">7,5</p>
                                 <p class="content__element--target col-1 pe-5">100</p>
                                 <p class="content__element--do col-1 pe-5">37,5%</p>
                             </div>
-                            <button class="material-icons border-0">
-                                expand_more
+                            <button class="material-icons border-0" onclick="kick(this)">
+                                delete
                                 </button>
                         </li>
                     </ul>

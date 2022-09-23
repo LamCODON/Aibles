@@ -19,7 +19,7 @@ function addkey(e){
         <button class="content__element--do col-1 pe-5 border-0 d-none" placeholder="Unit" readonly></button>
     </div>
     <button class="material-icons border-0">
-        expand_more
+        done
     </button>
     `
     ul.appendChild(liItem)
@@ -42,5 +42,8 @@ for (let i=0;i<targetOkr.length;i++){
     targetOkr[i].style.color='green'
 }
 
+function kick(e){
+    e.parentElement.remove()
+}
 
 
