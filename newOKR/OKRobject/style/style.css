@@ -34,32 +34,16 @@ header .header__right .header__info img {
   border-radius: 50%;
 }
 
-.content .hide {
-  cursor: pointer;
-}
 .content .content--head .content--avt {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.content .content--head .content__action > p {
-  display: flex;
-  align-content: center;
-}
-.content .content__block--head {
-  width: 100%;
-}
 .content .content__block--head .content__head--symbol-coulor {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background-color: red;
-}
-.content ul li {
-  height: 2.5rem;
 }
 .content ul li img {
   height: 2.3rem;
   width: 2.3rem;
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

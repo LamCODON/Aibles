@@ -48,34 +48,22 @@ header{
 }
 
 .content {
-    .hide{
-        cursor: pointer;
-    }
     .content--head{
         .content--avt{
             @include img;
-        }
-    .content__action>p{
-        display: flex;
-        align-content: center;
-    }    
+        } 
     }
     .content__block--head{
-        width: 100%;
         .content__head--symbol-coulor{
             width: 20px;
-            height: 20px; 
-            border-radius: 50%; 
-            background-color: red;
+            height: 20px;     
         }
     }
     ul{
         li{
-            height: 2.5rem;
             img{
                 height: 2.3rem;
                 width: 2.3rem;
-                border-radius: 50%; 
             }
         }
         
