@@ -1,0 +1,71 @@
+@import "variables";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: $color-text;
+}
+@mixin img {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+}
+body{
+    background-color: $color-background;
+}
+p{
+    margin: 0;
+}
+
+aside .nav {
+    a {
+        transition: 0.3s linear;
+
+        &:hover {
+            margin-left: .5rem;
+
+            &>* {
+                color: $color-primary;
+            }
+        }
+
+        &.active>* {
+            color: $color-primary;
+            font-weight: 700;
+        }
+    }
+}
+
+header{
+    .header__right{
+        .header__info{
+            img{
+                @include img;          
+            }
+        }
+    }
+}
+
+.content {
+    .content--head{
+        .content--avt{
+            @include img;
+        } 
+    }
+    .content__block--head{
+        .content__head--symbol-coulor{
+            width: 20px;
+            height: 20px;     
+        }
+    }
+    ul{
+        li{
+            img{
+                height: 2.3rem;
+                width: 2.3rem;
+            }
+        }
+        
+    }    
+}

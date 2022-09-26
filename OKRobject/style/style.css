@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #3d3c3d;
+}
+
+body {
+  background-color: #f9fbfc;
+}
+
+p {
+  margin: 0;
+}
+
+aside .nav a {
+  transition: 0.3s linear;
+}
+aside .nav a:hover {
+  margin-left: 0.5rem;
+}
+aside .nav a:hover > * {
+  color: #1250da;
+}
+aside .nav a.active > * {
+  color: #1250da;
+  font-weight: 700;
+}
+
+header .header__right .header__info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content .content--head .content--avt {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.content .content__block--head .content__head--symbol-coulor {
+  width: 20px;
+  height: 20px;
+}
+.content ul li img {
+  height: 2.3rem;
+  width: 2.3rem;
+}/*# sourceMappingURL=style.css.map */
