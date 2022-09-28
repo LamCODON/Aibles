@@ -10,32 +10,32 @@ function addkey(e){
     liItem.className='mb-4'
     liItem.innerHTML=`
     <div class="content__key d-flex flex-row align-items-md-center align-items-start">
-    <img src="./img/avt.jpg" alt="" class="content--avt rounded-pill">
-    <div class="content__key--main row w-100 d-flex align-items-baseline ms-2 pe-3">
-        <input class="col-md-7"></input>
-        <input class="col-md-2 col-3 text-center d-none d-md-block" type="date"></input>
-        <div class="form-check form-switch d-none">
-            <input class="form-check-input" type="checkbox" role="switch"
-                id="flexSwitchCheckDefault">
-        </div>
-        <input class="col-md-1 col-4 text-md-end" placeholder="Do"></input>
-        <input class="col-md-1 col-4 text-md-end" placeholder="Target"></input>
-        <div class="unit col-md-1 col-4 text-md-end p-0">
-            <select name="unit" id="unit" class="w-100">
-                <option value="volvo" class="text-end">%</option>
-                <option value="saab" class="text-end">$</option>
-                <option value="opel" class="text-end">num.</option>
-                <option value="audi" class="text-end">binary</option>
-            </select>
-        </div>
-    </div>
-    <button class="material-icons border-0" onclick="done(this)">
-        done
-    </button>
-    <button class="material-icons border-0 me-1" onclick="kick(this)">
-        delete
-    </button>
-</div>
+                                <img src="./img/avt.jpg" alt="" class="content--avt rounded-pill">
+                                <div class="content__key--main row w-100 d-flex align-items-baseline ms-2 pe-3">
+                                    <input class="col-md-7 border-0 border-end fw-bold" placeholder="Content"></input>
+                                    <input class="col-md-2 col-3 text-center d-none d-md-block border-0 border-end" type="date"></input>
+                                    <div class="form-check form-switch d-none">
+                                        <input class="form-check-input " type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                    </div>
+                                    <input class="col-md-1 col-4 text-md-end border-0 border-end" placeholder="Do"></input>
+                                    <input class="col-md-1 col-4 text-md-end border-0 border-end" placeholder="Target"></input>
+                                    <div class="unit col-md-1 col-4 text-md-end p-0">
+                                        <select name="unit" id="unit" class="w-100 form-select py-1 border-0">
+                                            <option value="volvo" class="text-end">%</option>
+                                            <option value="saab" class="text-end">$</option>
+                                            <option value="opel" class="text-end">num.</option>
+                                            <option value="audi" class="text-end">binary</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="material-icons border-0 mx-1" onclick="done(this)">
+                                    done
+                                </button>
+                                <button class="material-icons border-0 me-1" onclick="kick(this)">
+                                    delete
+                                </button>
+                            </div>
     `
     ul.appendChild(liItem)
 }   

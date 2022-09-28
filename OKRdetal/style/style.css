@@ -14,6 +14,10 @@ p {
   margin: 0;
 }
 
+input, select, option {
+  background-color: #f9fbfc;
+}
+
 aside .nav a {
   transition: 0.3s linear;
 }
@@ -47,7 +51,7 @@ header .header__btn {
 .content__head--symbol-coulor {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #fe2e55;
 }
 
 ul {

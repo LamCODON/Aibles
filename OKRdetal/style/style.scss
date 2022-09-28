@@ -17,6 +17,9 @@ body{
 p{
     margin: 0;
 }
+input ,select,option{
+    background-color: $color-background;
+}
 aside .nav {
     a {
         transition: 0.3s linear;
@@ -54,7 +57,7 @@ header{
 .content__head--symbol-coulor{
             width: 20px;
             height: 20px;
-            background-color: red;
+            background-color: $color-error;
         }
     ul{
         list-style: none;
