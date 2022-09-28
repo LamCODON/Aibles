@@ -18,6 +18,7 @@ for (let i=0;i<colourDisplay.length;i++){
     colourDisplay[i].style.backgroundColor=calcNumber.style.color
 }
 function hide(e){
+    
     let ul=e.parentElement.nextSibling.nextSibling;
     console.log(e.parentElement.nextElemnetSibling);
     if(ul.style.display=="none")

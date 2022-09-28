@@ -14,6 +14,10 @@ p {
   margin: 0;
 }
 
+input, select, option {
+  background-color: #f9fbfc;
+}
+
 aside .nav a {
   transition: 0.3s linear;
 }
@@ -38,37 +42,25 @@ header .header__btn {
   border-radius: 50px;
 }
 
-.content .hide {
-  cursor: pointer;
-}
-.content .content--head {
-  border-radius: 50px;
-}
-.content .content--head .content--avt {
+.content--avt {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.content .content--head .content__action > p {
-  display: flex;
-  align-content: center;
-}
-.content .content__block--head {
-  width: 100%;
-}
-.content .content__block--head .content__head--symbol-coulor {
+
+.content__head--symbol-coulor {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  background-color: #fe2e55;
 }
-.content ul {
+
+ul {
   list-style: none;
 }
-.content ul li {
+ul li {
   height: 2.5rem;
 }
-.content ul li img {
+ul li img {
   height: 2.3rem;
   width: 2.3rem;
   border-radius: 50%;
